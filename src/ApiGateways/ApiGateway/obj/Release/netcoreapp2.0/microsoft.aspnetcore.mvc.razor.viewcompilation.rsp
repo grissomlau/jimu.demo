@@ -1,0 +1,8 @@
+C:\Users\grissom\Documents\projects\github\jimu\src\Samples\Complex\ApiGateway
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=ApiGateway
+--content-root=C:\Users\grissom\Documents\projects\github\jimu\src\Samples\Complex\ApiGateway
+--file=C:\Users\grissom\Documents\projects\github\jimu\src\Samples\Complex\ApiGateway\Views\Home\Index.cshtml
+--file=C:\Users\grissom\Documents\projects\github\jimu\src\Samples\Complex\ApiGateway\Views\ServicesManager\Service.cshtml
+--file=C:\Users\grissom\Documents\projects\github\jimu\src\Samples\Complex\ApiGateway\Views\Shared\_Layout.cshtml
+--file=C:\Users\grissom\Documents\projects\github\jimu\src\Samples\Complex\ApiGateway\Views\_ViewStart.cshtml

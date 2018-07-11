@@ -1,0 +1,8 @@
+C:\Users\grissom\Documents\projects\github\jimu.demo\src\apigateway mode1\ApiGateway
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=ApiGateway
+--content-root=C:\Users\grissom\Documents\projects\github\jimu.demo\src\apigateway mode1\ApiGateway
+--file=C:\Users\grissom\Documents\projects\github\jimu.demo\src\apigateway mode1\ApiGateway\Views\Home\Index.cshtml
+--file=C:\Users\grissom\Documents\projects\github\jimu.demo\src\apigateway mode1\ApiGateway\Views\ServicesManager\Service.cshtml
+--file=C:\Users\grissom\Documents\projects\github\jimu.demo\src\apigateway mode1\ApiGateway\Views\Shared\_Layout.cshtml
+--file=C:\Users\grissom\Documents\projects\github\jimu.demo\src\apigateway mode1\ApiGateway\Views\_ViewStart.cshtml

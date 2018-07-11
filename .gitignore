@@ -1,0 +1,26 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/src/.vs
+/src/ApiGateways/ApiGateway/bin
+/src/Clients/Client1/bin/Debug/netcoreapp2.0
+/src/Clients/Client1/obj
+/src/QuickStart/QuickStart.Server1/bin
+/src/QuickStart/QuickStart.Server1/obj
+*.user
+/src/QuickStart/QuickStart.Services/bin
+/src/QuickStart/QuickStart.Services/obj
+/src/QuickStart.ApiGateway/bin/Debug/netcoreapp2.0
+/src/QuickStart.ApiGateway/obj
+/src/Servers/Server1/obj
+/src/Servers/Server1.DotnettyForTransfer/bin
+/src/Servers/Server1.DotnettyForTransfer/obj
+/src/Servers/Server2.HttpForTransfer/bin
+/src/Servers/Server2.HttpForTransfer/obj
+/src/Services/IServices/bin/Debug/netcoreapp2.0
+/src/Services/IServices/obj
+/src/Services/JustServcies/bin
+/src/Services/JustServcies/obj
+/src/Services/Services/bin/Debug/netcoreapp2.0
+/src/Services/Services/obj
