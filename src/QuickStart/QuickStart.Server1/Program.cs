@@ -8,7 +8,7 @@ namespace QuickStart.Server1
         static void Main(string[] args)
         {
             var hostBuilder = new ServiceHostServerBuilder(new Autofac.ContainerBuilder())
-                .UseLog4netLogger(new Jimu.LogOptions { EnableConsoleLog = true })
+                .UseLog4netLogger()
                 .LoadServices("QuickStart.Services")
                 .UseDotNettyForTransfer("127.0.0.1", 8001)
                 .UseInServerForDiscovery()

@@ -39,7 +39,7 @@ namespace QuickStart.ApiGateway
 
             //app.UseMvc();
             var host = new ServiceHostClientBuilder(new Autofac.ContainerBuilder())
-                .UseLog4netLogger(new Jimu.LogOptions { EnableConsoleLog = true })
+                .UseLog4netLogger()
                 .UsePollingAddressSelector()
                 .UseDotNettyForTransfer()
                 .UseInServerForDiscovery(new Jimu.DotNettyAddress("127.0.0.1", 8001))

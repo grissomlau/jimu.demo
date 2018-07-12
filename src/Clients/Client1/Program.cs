@@ -16,7 +16,7 @@ namespace Client1
             Thread.Sleep(1000);// waiting the server to start
             var containerBuilder = new ContainerBuilder();
             var hostBuilder = new Jimu.Client.ServiceHostClientBuilder(containerBuilder)
-                    .UseLog4netLogger(new LogOptions { EnableConsoleLog = true })//use log4net to logger
+                    .UseLog4netLogger()//use log4net to logger
                     .UsePollingAddressSelector()
                     .UseToken(() => null)
                     .UseInServerForDiscovery(new HttpAddress("127.0.0.1", 8001)) // use in memory modle for discoverying service, the ip and port are specified in the server;

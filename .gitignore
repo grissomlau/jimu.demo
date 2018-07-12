@@ -24,3 +24,6 @@
 /src/Services/JustServcies/obj
 /src/Services/Services/bin/Debug/netcoreapp2.0
 /src/Services/Services/obj
+/src/QuickStart/QuickStart.ApiGateway/bin/Debug/netcoreapp2.0
+/src/QuickStart/QuickStart.ApiGateway/obj
+/src/ApiGateways/ApiGateway/obj
