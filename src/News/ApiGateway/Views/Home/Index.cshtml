@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Home";
 }
 @section Head{
@@ -17,7 +16,7 @@
                     return "<span onclick='vm.detail(\"" + row.Code + "\")' class='glyphicon glyphicon-list' aria-hidden='true'></span>";
                 },
                 detail: function (code) {
-                    window.location.href = "/servicesmanager/service?server=" + code;
+                    window.location.href = "/servicesmanager/service?server=" + (code || "");
                 },
                 responseHandler: function (resp) {
                     return resp;
@@ -43,7 +42,7 @@
 
 <div class="container" id="form">
     <h4>Server</h4>
-
+    <button v-on:click="detail()">All Servicess</button>
     <table id="table" data-toggle="table"
            data-search="true"
            data-show-refresh="true"
