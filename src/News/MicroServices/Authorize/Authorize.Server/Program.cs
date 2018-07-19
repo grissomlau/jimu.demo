@@ -37,7 +37,7 @@ namespace Auth.Server
                      }
                      else
                      {
-                         ctx.AddClaim("role", member.Role);
+                         ctx.AddClaim("roles", member.Role);
                          ctx.AddClaim("member", Newtonsoft.Json.JsonConvert.SerializeObject(member));
 
                      }

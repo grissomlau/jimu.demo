@@ -35,6 +35,7 @@ namespace News.IServices
 
             news.PostTime = DateTime.Now.ToString();
             news.Id = new Guid().ToString();
+            news.Director = _jimuPayload.Items["username"].ToString();
             _newsDb.Add(news);
             return Task.FromResult(news.Id);
 

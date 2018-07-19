@@ -19,8 +19,8 @@ namespace Auth.Services
         static AuthMemberService()
         {
             // mock some member 
-            _membersDb.Add(new MemberInfo { Id = new Guid().ToString(), Name = "grissom", NickName = "Gil", Role = "admin" });
-            _membersDb.Add(new MemberInfo { Id = new Guid().ToString(), Name = "foo", NickName = "Fo", Role = "guest" });
+            _membersDb.Add(new MemberInfo { Id = Guid.NewGuid().ToString(), Name = "grissom", NickName = "Gil", Role = "admin" });
+            _membersDb.Add(new MemberInfo { Id = Guid.NewGuid().ToString(), Name = "foo", NickName = "Fo", Role = "guest" });
         }
 
         public MemberInfo GetMemberInfo(string username, string password)
