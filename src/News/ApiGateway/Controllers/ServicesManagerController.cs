@@ -18,8 +18,6 @@ namespace ApiGateway.Controllers
             var serviceDiscovery = JimuClient.Host.Container.Resolve<IClientServiceDiscovery>();
             var addresses = await serviceDiscovery.GetAddressAsync();
             return addresses;
-            //return (from addr in addresses
-            //select addr.ToString()).ToArray();
 
         }
 

@@ -33,7 +33,6 @@
   <ItemGroup>
     <PackageReference Include="Jimu.Client" Version="0.2.5" />
     <PackageReference Include="Jimu.Common.Discovery.ConsulIntegration" Version="0.2.5" />
-    <PackageReference Include="jose-jwt" Version="2.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
@@ -84,12 +83,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\assets\libs\Bootstrap-Table\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="appsettings.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>
