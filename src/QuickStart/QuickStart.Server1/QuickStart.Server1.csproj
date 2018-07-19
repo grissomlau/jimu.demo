@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Server" Version="0.2.3" />
+    <PackageReference Include="Jimu.Server" Version="0.2.5" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu" Version="0.2.5" />
+    <ProjectReference Include="..\Register.IServices\Register.IServices.csproj" />
   </ItemGroup>
 
 </Project>
