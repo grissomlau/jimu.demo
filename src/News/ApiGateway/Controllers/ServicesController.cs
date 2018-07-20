@@ -10,17 +10,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiGateway.Controllers
 {
     //[Produces("application/json")]
-    public class ServicesManagerController : Controller
+    public class ServicesController : Controller
     {
-        //[HttpGet(Name ="addresses")]
-        public async Task<List<JimuAddress>> GetAddresses()
+
+        public IActionResult Index()
         {
-            var serviceDiscovery = JimuClient.Host.Container.Resolve<IClientServiceDiscovery>();
-            var addresses = await serviceDiscovery.GetAddressAsync();
-            return addresses;
-
+            return View();
         }
-
         //[HttpGet(Name ="services")]
         public async Task<List<JimuServiceDesc>> GetServices(string server)
         {
@@ -36,15 +32,6 @@ namespace ApiGateway.Controllers
 
         }
 
-        public IActionResult Server()
-        {
-            return View();
-        }
-
-        public IActionResult Service()
-        {
-            return View();
-        }
 
     }
 }

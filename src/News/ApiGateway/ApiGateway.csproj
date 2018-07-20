@@ -31,6 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\HomeController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Jimu.Client" Version="0.2.5" />
     <PackageReference Include="Jimu.Common.Discovery.ConsulIntegration" Version="0.2.5" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
@@ -41,8 +45,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\ServicesManager\Service.cshtml" />
+    <None Include="Views\Server\Index.cshtml" />
+    <None Include="Views\Services\Index.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\assets\libs\Flat-UI\css\flat-ui.css.map" />

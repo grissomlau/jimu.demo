@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Register.IServices\Register.IServices.csproj" />
     <ProjectReference Include="..\Register.Services\Register.Services.csproj" />
   </ItemGroup>
 

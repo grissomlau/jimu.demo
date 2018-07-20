@@ -28,13 +28,13 @@
                     return "<span onclick='vm.detail(\"" + row.id + "\")' class='glyphicon glyphicon-list' aria-hidden='true'></span>";
                 },
                 detail: function (code) {
-                    window.location.href = "/servicesmanager/service?server=" + code;
+                    window.location.href = "/services/index?server=" + code;
                 },
                 responseHandler: function (resp) {
                     return resp;
                 },
                 loadData: function () {
-                    $.get("/servicesmanager/getservices?server=" + this.server, function (resp) {
+                    $.get("/services/getservices?server=" + this.server, function (resp) {
 
                         $("#table").bootstrapTable("load", resp);
                     });
