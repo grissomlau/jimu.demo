@@ -35,8 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Client" Version="0.2.5" />
-    <PackageReference Include="Jimu.Common.Discovery.ConsulIntegration" Version="0.2.5" />
+    <PackageReference Include="Jimu.Client" Version="0.2.6" />
+    <PackageReference Include="Jimu.Common.Discovery.ConsulIntegration" Version="0.2.6" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 

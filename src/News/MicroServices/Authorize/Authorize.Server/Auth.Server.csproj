@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Common.Discovery.ConsulIntegration" Version="0.2.5" />
-    <PackageReference Include="jimu.server" Version="0.2.5" />
+    <PackageReference Include="Jimu.Common.Discovery.ConsulIntegration" Version="0.2.6" />
+    <PackageReference Include="jimu.server" Version="0.2.6" />
   </ItemGroup>
 
   <ItemGroup>

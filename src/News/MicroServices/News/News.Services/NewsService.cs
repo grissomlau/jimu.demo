@@ -14,8 +14,8 @@ namespace News.IServices
         static NewsService()
         {
             // mock some  news
-            _newsDb.Add(new News { Id = new Guid().ToString(), Director = "grissom", PostTime = DateTime.Now.ToString(), Title = "世界杯：法国夺冠啦！", Content = "头条：法国勇夺2018年世界杯冠军， 后面省略 1 万字" });
-            _newsDb.Add(new News { Id = new Guid().ToString(), Director = "grissom", PostTime = DateTime.Now.ToString(), Title = "Jimu 发布新版本", Content = "新闻社：Jimu(积木) 发布新版本，特点有，后面省略 1 万字" });
+            _newsDb.Add(new News { Id = Guid.NewGuid().ToString(), Director = "grissom", PostTime = DateTime.Now.ToString(), Title = "世界杯：法国夺冠啦！", Content = "头条：法国勇夺2018年世界杯冠军， 后面省略 1 万字" });
+            _newsDb.Add(new News { Id = Guid.NewGuid().ToString(), Director = "grissom", PostTime = DateTime.Now.ToString(), Title = "Jimu 发布新版本", Content = "新闻社：Jimu(积木) 发布新版本，特点有，后面省略 1 万字" });
         }
         public NewsService(ILogger logger, JimuPayload jimuPayload)
         {
@@ -34,7 +34,7 @@ namespace News.IServices
             _logger.Debug($"member: {_jimuPayload.Items["username"]} post an news which title is: {news.Title}");
 
             news.PostTime = DateTime.Now.ToString();
-            news.Id = new Guid().ToString();
+            news.Id = Guid.NewGuid().ToString();
             news.Director = _jimuPayload.Items["username"].ToString();
             _newsDb.Add(news);
             return Task.FromResult(news.Id);

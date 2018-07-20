@@ -48,3 +48,6 @@
 /src/News/MicroServices/Register/Register.Server/obj
 /src/News/MicroServices/Register/Register.Services/bin/Debug/netcoreapp2.0
 /src/News/MicroServices/Register/Register.Services/obj
+/src/News/MicroServices/News/News.IServices/bin/Release/netcoreapp2.0
+/src/News/MicroServices/News/News.Server/bin/Release/netcoreapp2.0
+/src/News/MicroServices/News/News.Services/bin/Release/netcoreapp2.0

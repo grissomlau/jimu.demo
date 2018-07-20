@@ -12,7 +12,7 @@ namespace Register.Services
 
         public bool CheckName(string name)
         {
-            return _membersDb.Any(x => x.Name == name);
+            return !_membersDb.Any(x => x.Name == name);
         }
 
         public Task<bool> Register(string name, string nickname, string pwd)
