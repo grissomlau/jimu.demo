@@ -25,6 +25,7 @@ namespace ApiGateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            services.UseJimuSwagger();
             services.UseJimu();
         }
 
@@ -35,6 +36,8 @@ namespace ApiGateway
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseStatusCodePages();
+
+            app.UseJimuSwagger();
 
             // jimu client
             var host = new ServiceHostClientBuilder(new ContainerBuilder())
