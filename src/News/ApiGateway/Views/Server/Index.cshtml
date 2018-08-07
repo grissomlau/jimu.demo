@@ -20,6 +20,9 @@
                 },
                 responseHandler: function (resp) {
                     return resp;
+                },
+                swagger: function () {
+                    window.location.href = "/swagger/index.html";
                 }
             }
         });
@@ -42,7 +45,7 @@
 
 <div class="container" id="form">
     <h4>Server</h4>
-    <button v-on:click="detail()">All Services</button>
+    <button v-on:click="swagger()">Swagger</button>
     <table id="table" data-toggle="table"
            data-search="true"
            data-show-refresh="true"
