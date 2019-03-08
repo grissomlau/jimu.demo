@@ -9,7 +9,7 @@ namespace Register.Server
         {
             var builder = new ServiceHostServerBuilder(new Autofac.ContainerBuilder())
              .UseLog4netLogger()
-             .LoadServices("Register.IServices", "Register.Services")
+             .LoadServices(new string[] { "Register.IServices", "Register.Services" })
              .UseDotNettyForTransfer("127.0.0.1", 8001)
              .UseConsulForDiscovery("127.0.0.1", 8500, "JimuService", $"127.0.0.1:8001")
              .UseJoseJwtForOAuth<Jimu.DotNettyAddress>(new Jimu.Server.OAuth.JwtAuthorizationOptions

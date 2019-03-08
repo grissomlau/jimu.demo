@@ -7,15 +7,25 @@ namespace News.IServices
 {
     public class News
     {
-        [JimuFieldComment("新闻id")]
+        /// <summary>
+        /// 新闻id
+        /// </summary>
         public string Id { get; set; }
-        [JimuFieldComment("新闻标题")]
+        /// <summary>
+        /// 新闻标题
+        /// </summary>
         public string Title { get; set; }
-        [JimuFieldComment("作者")]
+        /// <summary>
+        /// 作者
+        /// </summary>
         public string Director { get; set; }
-        [JimuFieldComment("发布时间")]
+        /// <summary>
+        /// 发布时间
+        /// </summary>
         public string PostTime { get; set; }
-        [JimuFieldComment("新闻内容")]
+        /// <summary>
+        /// 新闻内容
+        /// </summary>
         public string Content { get; set; }
 
     }

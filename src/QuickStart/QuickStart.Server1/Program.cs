@@ -9,9 +9,9 @@ namespace QuickStart.Server1
         {
             var hostBuilder = new ServiceHostServerBuilder(new Autofac.ContainerBuilder())
                 .UseLog4netLogger()
-                .LoadServices("QuickStart.Services")
+                .LoadServices(new string[] { "QuickStart.Services" })
                 .UseDotNettyForTransfer("127.0.0.1", 8001)
-                .UseInServerForDiscovery()
+                .UseConsulForDiscovery("127.0.0.1", 8500, "JimuService", $"127.0.0.1:8001")
                 ;
             using (var host = hostBuilder.Build())
             {

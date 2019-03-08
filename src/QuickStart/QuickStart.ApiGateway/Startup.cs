@@ -42,7 +42,7 @@ namespace QuickStart.ApiGateway
                 .UseLog4netLogger()
                 .UsePollingAddressSelector()
                 .UseDotNettyForTransfer()
-                .UseInServerForDiscovery(new Jimu.DotNettyAddress("127.0.0.1", 8001))
+                .UseConsulForDiscovery("127.0.0.1",8500, "JimuService")
                 .Build();
             app.UseJimu(host);
             host.Run();
