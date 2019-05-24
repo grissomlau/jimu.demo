@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Jimu.Client;
 using Jimu.Client.ApiGateway;
+using Autofac;
 
 namespace QuickStart.ApiGateway
 {
@@ -25,7 +26,7 @@ namespace QuickStart.ApiGateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc();
+            services.UseJimuSwagger(new Jimu.Client.ApiGateway.SwaggerIntegration.JimuSwaggerOptions("CTAUTO API"));
             services.UseJimu();
         }
 
@@ -37,13 +38,13 @@ namespace QuickStart.ApiGateway
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseMvc();
-            var host = new ServiceHostClientBuilder(new Autofac.ContainerBuilder())
-                .UseLog4netLogger()
-                .UsePollingAddressSelector()
-                .UseDotNettyForTransfer()
-                .UseConsulForDiscovery("127.0.0.1",8500, "JimuService")
-                .Build();
+            app.UseJimuSwagger();
+
+            // jimu client
+
+
+            var host = new ApplicationClientBuilder(new ContainerBuilder()).Build();
+
             app.UseJimu(host);
             host.Run();
         }

@@ -51,3 +51,4 @@
 /src/News/MicroServices/News/News.IServices/bin/Release/netcoreapp2.0
 /src/News/MicroServices/News/News.Server/bin/Release/netcoreapp2.0
 /src/News/MicroServices/News/News.Services/bin/Release/netcoreapp2.0
+/src/QuickStart/QuickStart.ApiGateway/log

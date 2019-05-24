@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickStart.Services</name>
+    </assembly>
+    <members>
+        <member name="T:QuickStart.Services.UserService">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="M:QuickStart.Services.UserService.GetName(System.String)">
+            <summary>
+            获取用户名称
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

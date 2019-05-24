@@ -6,8 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Server" Version="0.3.1" />
-    <PackageReference Include="Jimu.Server.Discovery.ConsulIntegration" Version="0.3.0" />
+    <None Remove="JimuAppServerSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="JimuAppServerSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jimu.Server" Version="0.5.7" />
+    <PackageReference Include="Jimu.Server.Discovery.ConsulIntegration" Version="0.5.7" />
   </ItemGroup>
 
   <ItemGroup>
