@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Server" Version="0.5.7" />
-    <PackageReference Include="Jimu.Server.Discovery.ConsulIntegration" Version="0.5.7" />
+    <PackageReference Include="Jimu.Server" Version="0.5.15" />
+    <PackageReference Include="Jimu.Server.Discovery.ConsulIntegration" Version="0.5.15" />
   </ItemGroup>
 
   <ItemGroup>

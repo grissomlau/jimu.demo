@@ -9,9 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Client" Version="0.5.10" />
-    <PackageReference Include="Jimu.Client.ApiGateway.SwaggerIntegration" Version="0.5.10" />
-    <PackageReference Include="Jimu.Client.Discovery.ConsulIntegration" Version="0.5.10" />
+    <PackageReference Include="Jimu.Client" Version="0.5.14" />
+    <PackageReference Include="Jimu.Client.ApiGateway.SwaggerIntegration" Version="0.5.16" />
+    <PackageReference Include="Jimu.Client.Discovery.ConsulIntegration" Version="0.5.14" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
   </ItemGroup>
 

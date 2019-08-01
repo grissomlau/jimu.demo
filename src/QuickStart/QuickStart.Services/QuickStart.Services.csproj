@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu" Version="0.5.6" />
+    <PackageReference Include="Jimu" Version="0.5.9" />
   </ItemGroup>
 
 </Project>
