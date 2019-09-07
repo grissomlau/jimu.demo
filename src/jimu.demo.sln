@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuickStart", "QuickStart", "{DB7C2819-67B3-4291-ACF0-F565F13178BA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickStart.Server1", "QuickStart\QuickStart.Server1\QuickStart.Server1.csproj", "{B726AC1C-42D4-4832-A8E3-F6A08737A216}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickStart.ApiGateway", "QuickStart\QuickStart.ApiGateway\QuickStart.ApiGateway.csproj", "{F802AF68-9D37-47ED-ACF5-802469D1D8BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Advance", "Advance", "{77D8FE9F-C014-4A26-A019-6C456F9884F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

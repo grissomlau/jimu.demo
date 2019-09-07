@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,8 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Server" Version="0.5.15" />
-    <PackageReference Include="Jimu.Server.Discovery.ConsulIntegration" Version="0.5.15" />
+    <PackageReference Include="Jimu.Server.Discovery.Consul" Version="0.6.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -26,7 +26,7 @@ namespace QuickStart.ApiGateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.UseJimuSwagger(new Jimu.Client.ApiGateway.SwaggerIntegration.JimuSwaggerOptions("CTAUTO API"));
+            services.UseJimuSwagger(new Jimu.Client.ApiGateway.Swagger.JimuSwaggerOptions("CTAUTO API"));
             services.UseJimu();
         }
 

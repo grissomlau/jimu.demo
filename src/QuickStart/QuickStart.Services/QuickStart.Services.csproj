@@ -1,25 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\grissom\Documents\projects\github\jimu.demo\src\QuickStart\QuickStart.Services\QuickStart.Services.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.0\QuickStart.Services.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="QuickStart.Services.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="QuickStart.Services.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Jimu" Version="0.5.9" />
+    <PackageReference Include="Jimu" Version="0.6.0" />
   </ItemGroup>
 
 </Project>
