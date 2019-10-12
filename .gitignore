@@ -53,3 +53,4 @@
 /src/News/MicroServices/News/News.Services/bin/Release/netcoreapp2.0
 /src/QuickStart/QuickStart.ApiGateway/log
 /src/QuickStart/QuickStart.ApiGateway/bin/Debug/netcoreapp2.2
+/src/QuickStart/QuickStart.ApiGateway/bin/Debug/netcoreapp3.0
