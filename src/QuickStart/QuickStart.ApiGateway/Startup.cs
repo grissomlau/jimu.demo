@@ -26,19 +26,15 @@ namespace QuickStart.ApiGateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.UseJimuSwagger(new Jimu.Client.ApiGateway.Swagger.JimuSwaggerOptions("CTAUTO API"));
+            services.UseJimuSwagger(new Jimu.Client.ApiGateway.Swagger.JimuSwaggerOptions("My API"));
             services.UseJimu();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
 
-            app.UseJimuSwagger();
+            app.UseJimuSwagger(new Jimu.Client.ApiGateway.Swagger.JimuSwaggerOptions("My API"));
 
             // jimu client
 
