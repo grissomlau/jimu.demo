@@ -14,12 +14,7 @@ namespace QuickStart.ApiGateway
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            Jimu.Client.ApplicationWebClient.Instance.Run();
         }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
     }
 }

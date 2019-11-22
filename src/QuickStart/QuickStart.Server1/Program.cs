@@ -7,8 +7,7 @@ namespace QuickStart.Server1
     {
         static void Main(string[] args)
         {
-            ApplicationServer.Run();
-            Console.ReadLine();
+            ApplicationHostServer.Instance.Run();
         }
     }
 }
