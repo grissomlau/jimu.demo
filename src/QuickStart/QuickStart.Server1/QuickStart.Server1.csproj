@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jimu.Server.Discovery.Consul" Version="0.6.0" />
+    <PackageReference Include="Jimu.Server.Discovery.Consul" Version="1.0.0-rc5" />
   </ItemGroup>
 
   <ItemGroup>

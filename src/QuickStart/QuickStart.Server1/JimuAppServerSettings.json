@@ -24,7 +24,5 @@
   "ServiceOptions": {
     "Path": "", //服务dll所在路径，默认当前目录
     "LoadFilePattern": "QuickStart.Services.dll", //需要加载的服务dll，支持统配符:*.dll,*.txt
-    "WatchFilePattern": "", //监视文件修改，实现热加载,e.g.:IService.dll,Service.dll,支持通配符：*.dll,*.json
-    "EnableWatch": false //是否启动热加载
   }
 }

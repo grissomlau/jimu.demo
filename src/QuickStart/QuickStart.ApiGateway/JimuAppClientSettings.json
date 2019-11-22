@@ -24,6 +24,6 @@
     "LoadBalance": "Polling" //负载均衡算法: Polling - 轮询
   },
   "TransportOptions": {
-    "Protocol": "Netty,Http" //传输协议： Netty, Http
+    "Protocol": "Netty" //传输协议： Netty, Http
   }
 }

@@ -6,7 +6,7 @@ namespace QuickStart.Services
     /// <summary>
     /// 用户
     /// </summary>
-    [JimuServiceRoute("/{Service}")] // RPC 调用路径
+    [Jimu] // RPC 调用路径
     public class UserService : IJimuService
     {
         /// <summary>
